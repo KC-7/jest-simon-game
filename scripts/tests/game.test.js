@@ -2,9 +2,17 @@
  * @jest-environment jsdom
  */
 
-const { game, newGame, showScore, addTurn, lightsOn, showTurns, playerTurn } = require("../game");
+const {
+    game,
+    newGame,
+    showScore,
+    addTurn,
+    lightsOn,
+    showTurns,
+    playerTurn
+} = require("../game");
 
-jest.spyOn(window, "alert").mockImplementation(() => { });
+jest.spyOn(window, "alert").mockImplementation(() => {});
 
 // Note - the following codes is same for all HMTL code being loaded to the dom.
 beforeAll(() => {
@@ -72,7 +80,7 @@ describe("newGame works correctly", () => {
     test("expect data-listener to be true", () => {
         const elements = document.getElementsByClassName("circle");
         for (let element of elements) {
-            expect(element.getAttribute("data-listener")).toEqual("true"); 
+            expect(element.getAttribute("data-listener")).toEqual("true");
         };
     });
 });
