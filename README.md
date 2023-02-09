@@ -31,7 +31,7 @@ The gameplay tests are done to check the correctness of the game. The tests chec
 
 ![Mobile View](images/simonPC.png)
 
-## How to Run in Gitpod
+## How to Run Server in Gitpod
 
 To run a frontend (HTML, CSS, Javascript only) application in Gitpod:
 
@@ -52,6 +52,12 @@ To install Jest:
 3. When the package.json file has been installed, type `npm install --save-dev jest`
 
 Note, a previous version of Jest was installed in this project, I did this by entering the following for step 3. `npm install --save-dev jest@26.6.3`
+
+## How to Run the Tests
+
+To run the tests in Gitpod, in the terminal, type:
+
+`npm test`
 
 ## Credits
 
