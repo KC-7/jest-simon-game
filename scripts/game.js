@@ -5,11 +5,34 @@ let game = {
     choices: ["button1", "button2", "button3", "button4"],
 }
 
-module.exports = { game };
+function newGame() {
+    game.score = 0;
+    game.currentGame = [];
+    game.playerMoves = [];
+    showScore();
+};
 
-// newGame();
-// addTurn();
-// showTurns();
-// lightsOn();
-// playerTurn();
-// showScore();
+function showScore() {
+    document.getElementById("score").innerText = game.score;
+};
+
+// function addTurn() {
+
+// };
+
+// function showTurns() {
+
+// };
+
+// function lightsOn() {
+    
+// };
+
+// function playerTurn() {
+    
+// };
+
+
+
+module.exports = { game, newGame, showScore };
+
