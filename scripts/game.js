@@ -65,9 +65,21 @@ function showTurns() {
     }, 800);
 };
 
-// function playerTurn() {
-
-// };
+function playerTurn() {
+    /**
+     * Check play move matches the computer move
+     * If we are at the end of the sequence then increment the score and add another turn
+     * If the moves do not match then display an alert and start a new game
+     */
+    let i = game.playerMoves.length - 1; // i = index
+    if (game.currentGame[1] === game.playerMoves[i]) {
+        if (game.currentGame.length == game.playerMoves.length) {
+            game.score++;
+            showScore;
+            addTurn;
+        };
+    };
+};
 
 module.exports = {
     game,
@@ -75,5 +87,6 @@ module.exports = {
     showScore,
     addTurn,
     lightsOn,
-    showTurns
+    showTurns,
+    playerTurn
 };
