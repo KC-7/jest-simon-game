@@ -2,6 +2,8 @@
 
 A "Simon" game built with JS and utilising Jest to test same. The game is based on the classic memory game in which the user needs to follow the pattern of lights and sounds made by the computer. 
 
+[Live Link Here](https://kc-7.github.io/jest-simon-game/)
+
 ## Technologies Used
 
 The game was implemented using HTML, CSS, JavaScript & Jest.
@@ -19,7 +21,17 @@ The function tests are done to check the newGame function. The tests check if th
 ### Gameplay Tests
 The gameplay tests are done to check the correctness of the game. The tests check if the game score is incremented if the turn is correct, if an alert is called if the move is wrong, if the turnInProgress is toggled to true, and if the score is not incremented if the player clicks during the computer's turn.
 
-## How to Run
+## Design
+
+### Mobile
+
+![Mobile View](images/simonMobile.png)
+
+### Desktop
+
+![Mobile View](images/simonPC.png)
+
+## How to Run in Gitpod
 
 To run a frontend (HTML, CSS, Javascript only) application in Gitpod:
 
@@ -43,4 +55,4 @@ Note, a previous version of Jest was installed in this project, I did this by en
 
 ## Credits
 
-I learned the information in this project through the Code Institue. 
+I learned the information in this project through the Code Institute. 
