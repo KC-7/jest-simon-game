@@ -1,15 +1,18 @@
 body {
     font-family: Montserrat, sans-serif;
+    background-color: #F2F2F2;
 }
 
 h1 {
     font-weight: 300;
     margin-bottom: 10px;
+    color: #23BBBB;
 }
 
 h2 {
     font-weight: 200;
     margin-top: 10px;
+    color: #009FE3;
 }
 
 .container {
@@ -20,24 +23,28 @@ h2 {
     margin-bottom: 35px;
     text-align: center;
 }
+
 .circle {
     border-radius: 50%;
     position: absolute;
     cursor: pointer;
+    box-shadow: 0px 0px 10px 0px #999;
 }
+
 .circle1 {
     height: 500px;
     width: 500px;
-    background-color: #009FE3;
+    background-color: #23BBBB;
 }
 
 .circle2 {
     height: 400px;
     width: 400px;
-    background-color: #445261;
+    background-color: #009FE3;
     top: 50px;
     left: 50px;
 }
+
 .circle3 {
     height: 300px;
     width: 300px;
@@ -45,10 +52,11 @@ h2 {
     top: 100px;
     left: 100px;
 }
+
 .circle4 {
     height: 200px;
     width: 200px;
-    background-color: #23BBBB;
+    background-color: #445261;
     top: 150px;
     left: 150px;
 }
@@ -57,24 +65,24 @@ h2 {
     border-radius: 25%;
     box-sizing: border-box;
     position: absolute;
-    background-color: #E6ECF0;
+    background-color: #FF5A60;
     height: 80px;
     width: 80px;
     top: 210px;
     left: 210px;
     text-align: center;
-    color: #445261;
+    color: #FFF;
     font-size: 3em;
     padding-top: 10px;
 }
 
 .button {
-    background-color: #FF5A60;
-    color: #FFF;
-    border: 0;
+    background-color: #E6ECF0;
+    color: #445261;
+    border: 2px solid #445261;
     height: 40px;
     width: 160px;
-    border-radius: 5px;
+    border-radius: 20px;
     margin: 0 auto;
     display: block;
     top: 550px;
@@ -82,6 +90,72 @@ h2 {
     font-weight: 600;
 }
 
+.button:hover {
+    background-color: #445261;
+    color: #E6ECF0;
+    border: 2px solid #E6ECF0;
+}
+
 .light {
     opacity: 0.4;
+}
+
+footer {
+    color: grey;
+    padding: 10px 0;
+    text-align: center;
+    bottom: 10px;
+    right: 10px;
+    position: absolute;
+    font-size: x-small;
+}
+    
+footer p {
+    margin: 0;
+}
+
+@media (max-width: 550px) {
+    .container {
+        width: 260px;
+    }
+
+    .circle {
+        height: 260px;
+        width: 260px;
+    }
+
+    .circle2 {
+        height: 208px;
+        width: 208px;
+        top: 26px;
+        left: 26px;
+    }
+
+    .circle3 {
+        height: 156px;
+        width: 156px;
+        top: 53px;
+        left: 53px;
+    }
+
+    .circle4 {
+        height: 104px;
+        width: 104px;
+        top: 79px;
+        left: 79px;
+    }
+
+    .scorebox {
+        height: 52px;
+        width: 52px;
+        top: 105px;
+        left: 105px;
+        font-size: 2em;
+        padding: 1px, 0;
+    }
+
+    .button {
+        width: 130px;
+        top: 300px;
+    }
 }
