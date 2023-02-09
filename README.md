@@ -6,13 +6,23 @@ A "Simon" game built with JS and utilising Jest to test same.
 
 To run a frontend (HTML, CSS, Javascript only) application in Gitpod:
 
-1. In the terminal, type:
+1. In the terminal, type: `python3 -m http.server`
 
-`python3 -m http.server`
+2. A blue button should appear to click: ___Make Public___
 
-2. A blue button should appear to click: _Make Public_
+3. Another blue button should appear to click: ___Open Browser___
 
-3. Another blue button should appear to click: _Open Browser_
+## How to install Jest
+
+To install Jest:
+
+1. Type `npm init` into the terminal. 
+
+2. Use default settings for all except **test command**, type `jest` here.
+
+3. When the package.json file has been installed, type `npm install --save-dev jest`
+
+Note, a previous version of Jest was installed in this project, I did this by entering the following for step 3. `npm install --save-dev jest@26.6.3`
 
 ## Credits
 
