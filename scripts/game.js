@@ -34,7 +34,7 @@ function addTurn() {
      * Call showTurns function
      */
     game.playerMoves = [];
-    game.currentGame.push(game.choices[Math.floor(Math.random() * game.choices.length++)]); // Note: replaced 4 with game.choices.length++
+    game.currentGame.push(game.choices[Math.floor(Math.random() * game.choices.length)]); // Note: replaced 4 with game.choices.length
     showTurns();
 };
 
@@ -71,15 +71,18 @@ function playerTurn() {
      * If we are at the end of the sequence then increment the score and add another turn
      * If the moves do not match then display an alert and start a new game
      */
-    let i = game.playerMoves.length - 1; // i = index
-    if (game.currentGame[1] === game.playerMoves[i]) {
-        if (game.currentGame.length == game.playerMoves.length) {
+    let i = game.playerMoves.length - 1;
+    if (game.currentGame[i] === game.playerMoves[i]) {
+        if (game.currentGame.length === game.playerMoves.length) {
             game.score++;
-            showScore;
-            addTurn;
-        };
-    };
-};
+            showScore();
+            addTurn();
+        }
+    } else {
+        alert("Wrong move!");
+        newGame();
+    }
+}
 
 module.exports = {
     game,
